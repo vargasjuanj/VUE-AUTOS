@@ -1,10 +1,11 @@
 <template>
   <div >
     <div>
-<!--<Menu/> -->
+<Menu/>
 <!--<Menu algo="adsad" /> -->
 <!--<Menu :algo="adsad" /> -->
 <!--  <h1>{{ msg }}</h1> -->
+
     </div>
     <router-view/>
   </div>
@@ -22,13 +23,14 @@
 // comentario <!--  -->
 
 //import datos from '../assets/json/sistema_solar.json'   // poner en datos o cumputed, si no no funciona
+import Menu from './components/MenuDeOpciones'
 export default {
   //  name: 'App',
   props: {
     msg: String
   },
   components:{
-  //  Menu
+   Menu
   },
   data(){
     return{
